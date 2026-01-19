@@ -198,8 +198,8 @@ app.get('/thumbnail', (req, res) => {
 });
 
 // Start server
-server.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+server.listen(Number(port), "0.0.0.0", () => {
+ console.log(`Server running on 0.0.0.0:${port}`);
 });
 
 // Handle process termination
